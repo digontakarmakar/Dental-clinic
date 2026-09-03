@@ -7,7 +7,7 @@ A modern, bilingual (English/Bengali) dental clinic website built with React, Ty
 - **Bilingual Support**: Full English and Bengali language support with seamless switching
 - **Modern UI**: Clean, professional design with smooth animations using Framer Motion
 - **Responsive Design**: Fully responsive across all devices
-- **Interactive Components**: 
+- **Interactive Components**:
   - Auto-rotating hero image carousel
   - Google Maps integration
   - Patient testimonials with Google Reviews link
@@ -34,22 +34,26 @@ A modern, bilingual (English/Bengali) dental clinic website built with React, Ty
 ## 🛠️ Installation & Setup
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/digontakarmakar/Dental-clinic.git
 cd Dental-clinic
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start development server:
+
 ```bash
 npm run dev
 ```
 
 4. Build for production:
+
 ```bash
 npm run build
 ```
@@ -82,18 +86,26 @@ src/
 
 ## 🌐 Deployment
 
-This project is deployed on GitHub Pages. To deploy:
+GitHub Pages deployment is automated with GitHub Actions. Push to the `master` branch and the workflow will build and publish the site.
+
+Before the first deployment, open the repository's **Settings → Pages** and set **Source** to **GitHub Actions**. The live site will be available at:
+
+https://digontakarmakar.github.io/Dental-clinic/
+
+For a manual deployment, run:
 
 ```bash
 npm run deploy
 ```
 
-This will build the project and push the `dist` folder to the `gh-pages` branch.
+The Vite base path is configured for the repository name, and the build creates a `404.html` fallback so direct links to React routes work on GitHub Pages.
 
 ## 📝 Customization
 
 ### Clinic Information
+
 Edit `src/data/clinic-config.ts` to update:
+
 - Clinic name
 - Address
 - Phone number
@@ -102,9 +114,11 @@ Edit `src/data/clinic-config.ts` to update:
 - Social media links
 
 ### Doctors
+
 Edit `src/data/doctors.ts` to add/modify doctor profiles.
 
 ### Treatments
+
 Edit `src/data/treatments.ts` to update treatment information.
 
 ## 📄 License
@@ -114,4 +128,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👨‍💻 Author
 
 **Digonta Karmakar**
+
 - GitHub: [@digontakarmakar](https://github.com/digontakarmakar)
