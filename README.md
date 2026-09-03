@@ -88,7 +88,13 @@ src/
 
 GitHub Pages deployment is automated with GitHub Actions. Push to the `master` branch and the workflow will build and publish the site.
 
-Before the first deployment, open the repository's **Settings → Pages** and set **Source** to **GitHub Actions**. The live site will be available at:
+Before the first deployment, open the **Dental-clinic** repository's **Settings → Pages** and set **Source** to **GitHub Actions**. The repository must be `digontakarmakar/Dental-clinic`; if your local `origin` points elsewhere, update it with:
+
+```bash
+git remote set-url origin https://github.com/digontakarmakar/Dental-clinic.git
+```
+
+The live site will be available at:
 
 https://digontakarmakar.github.io/Dental-clinic/
 
